@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+   <head>
+      <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui"/>
+      <title>CSS Grid Layout №2</title>
+      <style media="screen">
+         .grid {
+           position: absolute;
+           top: 0;
+           right: 0;
+           bottom: 0;
+           left: 0;
+           padding: 0 30px 30px 0;
+           counter-reset: list;
+         }
+         .grid__item:first-child {
+           background: #090;
+         }
+         .grid__item {
+           margin: 30px 0 0 30px;
+           background: #0175A7;
+           color: #FFF;
+           display: flex;
+         }
+         .grid__item:last-child {
+           background: #C00;
+         }
+         .grid--ascii {
+           display: grid;
+           grid-template-areas: 'a a a a'
+                                'b c c d'
+                                'b c c d'
+                                'b c c d'
+                                'b c c d'
+                                'b c c d'
+                                'e e e e';
+         }
+         .grid :nth-child(1) { grid-area: a }
+         .grid :nth-child(2) { grid-area: b }
+         .grid :nth-child(3) { grid-area: c }
+         .grid :nth-child(4) { grid-area: d }
+         .grid :nth-child(5) { grid-area: e }
+
+         @media (max-width: 850px) {
+           .grid--ascii {
+             transition: all .2s;
+             display: grid;
+             grid-template-areas: 'a a a a'
+                                  'b b b b'
+                                  'c c c c'
+                                  'd d d d'
+                                  'e e e e';
+           }
+         }
+      </style>
+   </head>
+   <!--
+     Демка из доклада Вадима Макеева: https://www.youtube.com/watch?v=5yCuzHklYZ4
+   -->
+   <body>
+      <div class="grid grid--ascii">
+         <div class="grid__item"></div>
+         <div class="grid__item"></div>
+         <div class="grid__item"></div>
+         <div class="grid__item"></div>
+         <div class="grid__item"></div>
+      </div>
+   </body>
+</html>
