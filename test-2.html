@@ -5,6 +5,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui"/>
       <title>CSS Grid Layout №2</title>
       <style media="screen">
+         * {transition: all 2s;}
          .grid {
            position: absolute;
            top: 0;
@@ -44,13 +45,15 @@
 
          @media (max-width: 850px) {
            .grid--ascii {
-             transition: all .2s;
              display: grid;
              grid-template-areas: 'a a a a'
                                   'b b b b'
                                   'c c c c'
                                   'd d d d'
                                   'e e e e';
+           }
+           .grid__item {
+             background: rgba(250, 250, 162, 1);
            }
          }
       </style>

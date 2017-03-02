@@ -12,4 +12,5 @@
 
 1. https://css-tricks.com/snippets/css/complete-guide-grid/
 1. [«Золотая рыбка CSS3 Grid Layout»](http://css-live.ru/css/zolotaya-rybka-css3-grid-layout.html) в трёх частях
+1. И все статьи на CSS-Live по тегу [CSS3 Grid Layout](http://css-live.ru/tag/css3-grid-layout)
 1. [Доклад](https://www.youtube.com/watch?v=5yCuzHklYZ4) Вадима Макеева (отдельно — [слайды](https://pepelsbey.net/pres/grid-layout/))
